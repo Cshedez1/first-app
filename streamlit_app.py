@@ -1,3 +1,4 @@
+pip install streamlit openai langchain
 import streamlit as st
 from langchain.llms import OpenAI
 
@@ -16,3 +17,4 @@ with st.form('my_form'):
     st.warning('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', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'):
     generate_response(text)
+    
